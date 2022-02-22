@@ -3,14 +3,14 @@ header {
     justify-content: space-between;
     padding: 2rem 4rem;
 
-    img {
+    .logo {
         width: 180px;
     }
 }
 
 .btn {
     border: 1px solid $color-pink;
-    border-radius: 20px;
+    border-radius: 50px;
     font-size: 1.2rem;
     padding: .5rem 2rem;
     text-decoration: none;
@@ -27,8 +27,8 @@ header {
     font-weight: 700;
     background-color: $color-pink;
     color: $color-very-pale-blue;
-    padding: 1.2rem 6rem;
-    width: 20%;
+    padding: 1.5rem 7rem;
+    box-shadow: 0px 5px 20px -5px rgba($color: #000000, $alpha: .5);
 }
 
 h1 {
@@ -38,20 +38,31 @@ h1 {
 }
 
 section {
+    padding: 0 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
     h1 {
         margin-top: 10rem;
     }
 
     p {
-        width: 32%;
+        width: 55%;
         text-align: center;
         font-size: 1.2rem;
-        margin: 1rem auto;
+        font-weight: 600;
+        margin-top: 2rem;
     }
     
     a {
-        margin-top: 2rem;
-        margin: auto;
+        margin-top: 3rem;
+    }
+
+    img {
+        width: 100%;
+        margin-top: 5rem;        
     }
 }
 
