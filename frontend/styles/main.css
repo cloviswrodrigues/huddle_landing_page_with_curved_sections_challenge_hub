@@ -7,6 +7,7 @@
 
 html {
   font-family: Open Sans, sans-serif;
+  font-size: 10px;
 }
 
 header {
@@ -16,10 +17,55 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem;
+  padding: 2rem 4rem;
 }
 
 header img {
-  width: 150px;
+  width: 180px;
+}
+
+.btn {
+  border: 1px solid #ff52bf;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  padding: .5rem 2rem;
+  text-decoration: none;
+  display: block;
+}
+
+.btn-rounded-white {
+  background-color: white;
+  color: #ff52bf;
+}
+
+.btn-rounded-pink {
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #ff52bf;
+  color: #f5faff;
+  padding: 1.2rem 6rem;
+  width: 20%;
+}
+
+h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+section h1 {
+  margin-top: 10rem;
+}
+
+section p {
+  width: 32%;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+}
+
+section a {
+  margin-top: 2rem;
+  margin: auto;
 }
 /*# sourceMappingURL=main.css.map */
