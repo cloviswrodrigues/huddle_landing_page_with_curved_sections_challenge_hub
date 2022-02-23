@@ -55,7 +55,7 @@ h1 {
   text-align: center;
 }
 
-section {
+.section__center {
   padding: 0 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,11 +70,11 @@ section {
   text-align: center;
 }
 
-section h1 {
+.section__center h1 {
   margin-top: 10rem;
 }
 
-section p {
+.section__center p {
   width: 55%;
   text-align: center;
   font-size: 1.2rem;
@@ -82,12 +82,43 @@ section p {
   margin-top: 2rem;
 }
 
-section a {
+.section__center a {
   margin-top: 3rem;
 }
 
-section img {
+.section__center img {
   width: 100%;
   margin-top: 5rem;
+}
+
+.emphasis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.emphasis__svg {
+  float: left;
+  width: 30px;
+  height: 24px;
+}
+
+.emphasis__title {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.emphasis__info {
+  font-size: 1.2rem;
+  color: gray;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */
