@@ -31,18 +31,16 @@ header {
     box-shadow: 0px 5px 20px -5px rgba($color: #000000, $alpha: .5);
 }
 
-h1 {
-    font-family: Poppins, sans-serif;
-    font-size: 3.2rem;   
-    text-align: center;
+
+.p-right {
+    padding-right: 8rem;
 }
 
-.section__center {
+.section-center {
     padding: 0 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 
     h1 {
         margin-top: 10rem;
@@ -63,6 +61,42 @@ h1 {
     img {
         width: 100%;
         margin-top: 5rem;        
+    }
+}
+
+.section-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10%;    
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    div {
+        width: 50%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.section-bg-wave {
+    background-color: rgb(246, 251, 255);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        left: 0;
+        width: 100%;
+        height: 165px;
+        background: url(../assets/bg-section-top-desktop-1.svg) no-repeat;
+        background-size: contain;
+        z-index: 9;
     }
 }
 
