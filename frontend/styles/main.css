@@ -5,6 +5,20 @@
           box-sizing: border-box;
 }
 
+.p-right {
+  padding-right: 8rem;
+}
+
+.px-8-vw {
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+.px-18-vw {
+  padding-left: 18vw;
+  padding-right: 18vw;
+}
+
 html {
   font-family: Open Sans, sans-serif;
   font-size: 10px;
@@ -69,12 +83,7 @@ header .logo {
           box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.5);
 }
 
-.p-right {
-  padding-right: 8rem;
-}
-
 .section-center {
-  padding: 0 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,7 +128,8 @@ header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10%;
+  padding: 0 8vw;
+  margin: 20rem 0;
 }
 
 .section-row h2 {
@@ -142,11 +152,23 @@ header .logo {
 .section-bg-wave::before {
   content: '';
   position: absolute;
-  top: -30px;
+  top: -128px;
   left: 0;
   width: 100%;
   height: 165px;
   background: url(../assets/bg-section-top-desktop-1.svg) no-repeat;
+  background-size: contain;
+  z-index: 9;
+}
+
+.section-bg-wave::after {
+  content: '';
+  position: absolute;
+  bottom: -165px;
+  left: 0;
+  width: 100%;
+  height: 165px;
+  background: url(../assets/bg-section-bottom-desktop-1.svg) no-repeat;
   background-size: contain;
   z-index: 9;
 }

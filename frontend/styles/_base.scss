@@ -3,6 +3,7 @@ $color-light-pink: hsl(321, 100%, 78%);
 $color-light-red: hsl(0, 100%, 63%);
 $color-white: white;
 $color-gray: gray;
+$color-blue-light: rgb(246, 251, 255);
 
 $color-very-dark-cyan: hsl(192, 100%, 9%);
 $color-very-pale-blue: hsl(207, 100%, 98%);
@@ -14,8 +15,16 @@ $color-very-pale-blue: hsl(207, 100%, 98%);
     box-sizing: border-box;
 }
 
-html {
-    font-family: Open Sans, sans-serif;
-    font-size: 10px;
-    color: $color-very-dark-cyan;
+.p-right {
+    padding-right: 8rem;
+}
+
+.px-8-vw {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.px-18-vw {
+    padding-left: 18vw;
+    padding-right: 18vw;
 }

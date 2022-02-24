@@ -31,13 +31,7 @@ header {
     box-shadow: 0px 5px 20px -5px rgba($color: #000000, $alpha: .5);
 }
 
-
-.p-right {
-    padding-right: 8rem;
-}
-
 .section-center {
-    padding: 0 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,7 +62,8 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 10%;    
+    padding: 0 8vw;    
+    margin: 20rem 0;
 
     h2 {
         margin-bottom: 1rem;
@@ -84,17 +79,29 @@ header {
 }
 
 .section-bg-wave {
-    background-color: rgb(246, 251, 255);
+    background-color: $color-blue-light;
     position: relative;
 
     &::before {
         content: '';
         position: absolute;
-        top: -30px;
+        top: -128px;
         left: 0;
         width: 100%;
         height: 165px;
         background: url(../assets/bg-section-top-desktop-1.svg) no-repeat;
+        background-size: contain;
+        z-index: 9;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -165px;
+        left: 0;
+        width: 100%;
+        height: 165px;
+        background: url(../assets/bg-section-bottom-desktop-1.svg) no-repeat;
         background-size: contain;
         z-index: 9;
     }
