@@ -2,10 +2,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 2rem 4rem;
-
-    .logo {
-        width: 180px;
-    }
 }
 
 .btn {
@@ -17,12 +13,12 @@ header {
     display: block;
 }
 
-.btn-rounded-white {
+.btn-rounded--white {
     background-color: $color-white;
     color: $color-pink;
 }
 
-.btn-rounded-pink {
+.btn-rounded--pink {
     font-size: 1rem;
     font-weight: 700;
     background-color: $color-pink;
@@ -129,5 +125,54 @@ header {
         font-size: 1.2rem;
         color: $color-gray;
         font-weight: 400;
+    }
+}
+
+.footer {
+    display: flex;
+    background-color: $color-very-dark-cyan;
+}
+
+.about {
+    width: 60%;    
+    color: $color-white;
+
+    &__paragraph {
+        font-size: 1rem;
+        font-weight: 600;
+        width: 22rem;
+        line-height: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;       
+    }
+
+    &__icon {
+        margin-right: 1rem;
+        transform: scale(0.70);
+    }
+}
+
+.newsletter {
+    width: 40%;
+}
+
+.logo {
+    width: 240px;
+    height: 39px;
+    
+    svg {
+        transform: scale(0.60);
+    }    
+}
+
+.logo--white {
+
+    svg g path {
+        fill: $color-white;
     }
 }

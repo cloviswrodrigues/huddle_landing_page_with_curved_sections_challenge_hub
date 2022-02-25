@@ -9,6 +9,10 @@
   padding-right: 8rem;
 }
 
+.p-left {
+  padding-left: 8rem;
+}
+
 .px-8-vw {
   padding-left: 8vw;
   padding-right: 8vw;
@@ -55,10 +59,6 @@ header {
   padding: 2rem 4rem;
 }
 
-header .logo {
-  width: 180px;
-}
-
 .btn {
   border: 1px solid #ff52bf;
   border-radius: 50px;
@@ -68,12 +68,12 @@ header .logo {
   display: block;
 }
 
-.btn-rounded-white {
+.btn-rounded--white {
   background-color: white;
   color: #ff52bf;
 }
 
-.btn-rounded-pink {
+.btn-rounded--pink {
   font-size: 1rem;
   font-weight: 700;
   background-color: #ff52bf;
@@ -202,5 +202,59 @@ header .logo {
   font-size: 1.2rem;
   color: gray;
   font-weight: 400;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #00252e;
+}
+
+.about {
+  width: 60%;
+  color: white;
+}
+
+.about__paragraph {
+  font-size: 1rem;
+  font-weight: 600;
+  width: 22rem;
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.about__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.about__icon {
+  margin-right: 1rem;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.newsletter {
+  width: 40%;
+}
+
+.logo {
+  width: 240px;
+  height: 39px;
+}
+
+.logo svg {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+.logo--white svg g path {
+  fill: white;
 }
 /*# sourceMappingURL=main.css.map */
