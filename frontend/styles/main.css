@@ -77,6 +77,7 @@ header {
   padding: .5rem 2rem;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
 }
 
 .btn-rounded--white {
@@ -92,6 +93,23 @@ header {
   padding: 1.5rem 7rem;
   -webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-rounded--pink:hover {
+  background-color: #ff8fd8;
+}
+
+.btn-square {
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: #ff52bf;
+  color: #f5faff;
+  padding: .9rem 2.5rem;
+  border-radius: 3px;
+}
+
+.btn-square:hover {
+  background-color: #ff8fd8;
 }
 
 .section-center {
@@ -291,8 +309,8 @@ header {
 }
 
 .newsletter .form__input {
-  padding: .8rem .5rem;
-  border-radius: 5px;
+  padding: .9rem .5rem;
+  border-radius: 3px;
   width: 230px;
 }
 
@@ -300,6 +318,12 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
+  font-weight: 600;
+  color: red;
+}
+
+.newsletter .form .btn-square {
+  margin-left: 2.5rem;
 }
 
 .logo {

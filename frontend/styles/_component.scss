@@ -11,6 +11,7 @@ header {
     padding: .5rem 2rem;
     text-decoration: none;
     display: inline-block;
+    cursor: pointer;
 }
 
 .btn-rounded--white {
@@ -25,6 +26,23 @@ header {
     color: $color-very-pale-blue;
     padding: 1.5rem 7rem;
     box-shadow: 0px 5px 20px -5px rgba($color: #000000, $alpha: .5);
+
+    &:hover {
+        background-color: $color-light-pink;
+    }
+}
+
+.btn-square {
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: $color-pink;
+    color: $color-very-pale-blue;
+    padding: .9rem 2.5rem;
+    border-radius: 3px;
+
+    &:hover {
+        background-color: $color-light-pink;
+    }
 }
 
 .section-center {
@@ -198,8 +216,8 @@ header {
         }
 
         &__input {
-            padding: .8rem .5rem; 
-            border-radius: 5px;
+            padding: .9rem .5rem; 
+            border-radius: 3px;
             width: 230px;
         }
 
@@ -207,6 +225,13 @@ header {
             position: absolute;
             bottom: 0;
             left: 0;
+            font-weight: 600;
+            color: $color-red;
+
+        }
+
+        .btn-square {
+            margin-left: 2.5rem;
         }
     }
 }
