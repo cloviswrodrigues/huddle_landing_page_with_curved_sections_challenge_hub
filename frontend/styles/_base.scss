@@ -22,6 +22,11 @@ input {
     box-shadow: none;
 }
 
+a {
+    all: unset;
+    cursor: pointer;
+}
+
 .p-right {
     padding-right: 8rem;
 }
