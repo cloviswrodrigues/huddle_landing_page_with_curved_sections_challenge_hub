@@ -1,0 +1,30 @@
+@mixin bg-wave-blue($bg-top, $bg-bottom) {
+    background-color: $color-blue-light;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        top: -10.7vw;
+        left: 0;
+        width: 100%;
+        height: 10.7vw;
+        background: url('../assets/'+$bg-top) no-repeat;
+        background-size: cover;
+        z-index: 9;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -10.7vw;
+        left: 0;
+        width: 100%;
+        height: 10.7vw;
+        background: url('../assets/'+$bg-bottom) no-repeat;
+        background-size: cover;
+        z-index: 9;
+    }
+
+}

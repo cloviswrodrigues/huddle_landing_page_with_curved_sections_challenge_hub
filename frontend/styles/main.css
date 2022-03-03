@@ -188,25 +188,56 @@ header {
 
 .section-bg-wave::before {
   content: '';
+  width: 100%;
   position: absolute;
-  top: -128px;
+  top: -10.7vw;
   left: 0;
   width: 100%;
-  height: 165px;
-  background: url(../assets/bg-section-top-desktop-1.svg) no-repeat;
-  background-size: contain;
+  height: 10.7vw;
+  background: url("../assets/bg-section-top-desktop-1.svg") no-repeat;
+  background-size: cover;
   z-index: 9;
 }
 
 .section-bg-wave::after {
   content: '';
   position: absolute;
-  bottom: -165px;
+  bottom: -10.7vw;
   left: 0;
   width: 100%;
-  height: 165px;
-  background: url(../assets/bg-section-bottom-desktop-1.svg) no-repeat;
-  background-size: contain;
+  height: 10.7vw;
+  background: url("../assets/bg-section-bottom-desktop-1.svg") no-repeat;
+  background-size: cover;
+  z-index: 9;
+}
+
+.section-bg-wave-2 {
+  background-color: #f6fbff;
+  position: relative;
+}
+
+.section-bg-wave-2::before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  top: -10.7vw;
+  left: 0;
+  width: 100%;
+  height: 10.7vw;
+  background: url("../assets/bg-section-top-desktop-2.svg") no-repeat;
+  background-size: cover;
+  z-index: 9;
+}
+
+.section-bg-wave-2::after {
+  content: '';
+  position: absolute;
+  bottom: -10.7vw;
+  left: 0;
+  width: 100%;
+  height: 10.7vw;
+  background: url("../assets/bg-section-bottom-desktop-2.svg") no-repeat;
+  background-size: cover;
   z-index: 9;
 }
 
@@ -255,11 +286,11 @@ header {
 .footer::before {
   content: '';
   width: 100%;
-  height: 158px;
+  height: 10.7vw;
   background: url(../assets/bg-footer-top-desktop.svg) no-repeat;
   background-size: cover;
   position: absolute;
-  top: -158px;
+  top: -10.7vw;
   left: 0;
 }
 
