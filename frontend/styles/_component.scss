@@ -50,6 +50,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 
     h1 {
         margin-top: 10rem;
@@ -61,6 +62,10 @@ header {
         font-size: 1.2rem;
         font-weight: 600;
         margin-top: 2rem;
+
+        @media screen and(max-width: $break-mobile) {
+            width: 100%;
+        }
     }
     
     a {
@@ -78,7 +83,7 @@ header {
     flex-direction: row;
     align-items: center;
     padding: 0 8vw;    
-    margin: 20rem 0;
+    margin: 15vw 0;
 
     h2 {
         margin-bottom: 1rem;
@@ -130,7 +135,7 @@ header {
 .footer {
     display: flex;
     background-color: $color-very-dark-cyan;
-    margin-top: 30rem;
+    margin-top: 20vw;
     padding-top: 8rem;
     padding-bottom: 8rem;
     position: relative;
@@ -142,7 +147,7 @@ header {
         background: url(../assets/bg-footer-top-desktop.svg) no-repeat;
         background-size: cover;
         position: absolute;
-        top: -10.7vw;
+        top: -10.6vw;
         left: 0;
     }
 }

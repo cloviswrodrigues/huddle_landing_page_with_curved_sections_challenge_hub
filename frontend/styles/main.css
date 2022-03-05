@@ -30,15 +30,28 @@ a {
   padding-right: 8vw;
 }
 
-.px-18-vw {
+.container {
   padding-left: 18vw;
   padding-right: 18vw;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }
 
 html {
   font-family: Open Sans, sans-serif;
   font-size: 10px;
   color: #00252e;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 8px;
+  }
 }
 
 .text-center {
@@ -131,6 +144,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .section-center h1 {
@@ -143,6 +157,12 @@ header {
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .section-center p {
+    width: 100%;
+  }
 }
 
 .section-center a {
@@ -166,7 +186,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 8vw;
-  margin: 20rem 0;
+  margin: 15vw 0;
 }
 
 .section-row h2 {
@@ -277,7 +297,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   background-color: #00252e;
-  margin-top: 30rem;
+  margin-top: 20vw;
   padding-top: 8rem;
   padding-bottom: 8rem;
   position: relative;
@@ -290,7 +310,7 @@ header {
   background: url(../assets/bg-footer-top-desktop.svg) no-repeat;
   background-size: cover;
   position: absolute;
-  top: -10.7vw;
+  top: -10.6vw;
   left: 0;
 }
 

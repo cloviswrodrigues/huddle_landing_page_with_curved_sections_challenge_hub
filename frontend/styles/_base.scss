@@ -9,6 +9,8 @@ $color-blue-light: rgb(246, 251, 255);
 $color-very-dark-cyan: hsl(192, 100%, 9%);
 $color-very-pale-blue: hsl(207, 100%, 98%);
 
+$break-mobile: 900px;
+
 
 * {
     margin: 0;
@@ -40,7 +42,12 @@ a {
     padding-right: 8vw;
 }
 
-.px-18-vw {
+.container {
     padding-left: 18vw;
     padding-right: 18vw;
+
+    @media screen and(max-width: $break-mobile) {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
 }
