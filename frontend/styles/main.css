@@ -174,7 +174,7 @@ header {
   margin-top: 5rem;
 }
 
-.section-row {
+.section-secondary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,15 +189,24 @@ header {
   margin: 15vw 0;
 }
 
-.section-row h2 {
+@media screen and (max-width: 900px) {
+  .section-secondary {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.section-secondary h2 {
   margin-bottom: 1rem;
 }
 
-.section-row div {
+.section-secondary div {
   width: 50%;
 }
 
-.section-row img {
+.section-secondary img {
   width: 100%;
 }
 
@@ -292,6 +301,22 @@ header {
   font-weight: 400;
 }
 
+@media screen and (max-width: 900px) {
+  .emphasis {
+    height: 240px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,6 +337,17 @@ header {
   position: absolute;
   top: -10.6vw;
   left: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 4rem 3rem 2rem 3rem;
+    margin-top: 25rem;
+  }
 }
 
 .about {
@@ -398,6 +434,12 @@ header {
   width: 230px;
 }
 
+@media screen and (max-width: 900px) {
+  .newsletter .form__input {
+    width: 100%;
+  }
+}
+
 .newsletter .form__error {
   position: absolute;
   bottom: 0;
@@ -410,6 +452,19 @@ header {
   margin-left: 2.5rem;
 }
 
+@media screen and (max-width: 900px) {
+  .newsletter .form .btn-square {
+    margin: 1rem 0;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .newsletter {
+    width: 100%;
+  }
+}
+
 .logo {
   width: 240px;
   height: 39px;
@@ -420,6 +475,20 @@ header {
   left: -50px;
   -webkit-transform: scale(0.6);
           transform: scale(0.6);
+}
+
+@media screen and (max-width: 900px) {
+  .logo svg {
+    left: -80px;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    width: 150px;
+  }
 }
 
 .logo--white svg g path {
