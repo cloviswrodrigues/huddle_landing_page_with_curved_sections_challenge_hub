@@ -1,8 +1,29 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 4rem;
+.logo {
+    width: 240px;
+    height: 39px;
+    
+
+    svg {
+        position: relative;
+        left: -50px;
+        transform: scale(0.60);
+
+        @media screen and(max-width: $break-mobile) {
+            left: -80px;
+            transform: scale(0.40);
+        }
+    }    
+
+    @media screen and(max-width: $break-mobile) {
+        width: 150px;
+    }
+}
+
+.logo--white {
+
+    svg g path {
+        fill: $color-white;
+    }
 }
 
 .btn {
@@ -21,15 +42,19 @@ header {
 }
 
 .btn-rounded--pink {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 700;
     background-color: $color-pink;
     color: $color-very-pale-blue;
-    padding: 1.5rem 7rem;
+    padding: 2rem 8.5rem;
     box-shadow: 0px 5px 20px -5px rgba($color: #000000, $alpha: .5);
 
     &:hover {
         background-color: $color-light-pink;
+    }
+
+    @media screen and(max-width: $break-mobile) {
+        padding: 1.5rem 6rem;
     }
 }
 
@@ -93,6 +118,10 @@ header {
         margin-bottom: 1rem;
     }
 
+    p {
+        font-size: 1.4rem;
+    }
+
     div {
         width: 50%;
     }
@@ -125,7 +154,7 @@ header {
     }
 
     &__title {
-        font-size: 4.8rem;
+        font-size: 5.8rem;
         font-weight: 700;
     }
 
@@ -136,167 +165,9 @@ header {
     }
 
     @media screen and(max-width: $break-mobile) {
-        height: 240px;
+        height: 300px;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-    }
-}
-
-.footer {
-    display: flex;
-    background-color: $color-very-dark-cyan;
-    margin-top: 20vw;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    position: relative;
-
-    &::before {
-        content: '';
-        width: 100%;
-        height: 10.7vw;
-        background: url(../assets/bg-footer-top-desktop.svg) no-repeat;
-        background-size: cover;
-        position: absolute;
-        top: -10.6vw;
-        left: 0;
-    }
-
-    @media screen and(max-width: $break-mobile) {
-        flex-direction: column-reverse;
-        padding: 4rem 3rem 2rem 3rem;
-        margin-top: 25rem;
-    }
-}
-
-.about {
-    width: 60%;    
-    color: $color-white;
-
-    &__paragraph {
-        font-size: 1rem;
-        font-weight: 600;
-        width: 22rem;
-        line-height: 1.8rem;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-    }
-
-    &__contact {
-        display: flex;
-        align-items: center;
-        margin-top: 1rem;       
-    }
-
-    &__icon {
-        margin-right: 1rem;
-        transform: scale(0.70);
-    }
-}
-
-.social__media {
-    margin-top: 4rem;
-    display: flex;
-    justify-content: space-between;
-    width: 120px;
-    height: 50px;
-    
-    a {
-        width: 30px;
-    }
-
-    &-icon {
-        width: 100%;
-        height: 100%;
-
-        &:hover {
-            fill: rgb(0, 174, 255);
-        }
-    }
-}
-
-.newsletter {
-    width: 40%;    
-    color: $color-white;
-
-    &__title {
-        text-transform: uppercase;
-    }
-
-    &__paragraph {
-        font-size: 1rem;
-        font-weight: 600;        
-        line-height: 1.8rem;
-        width: 25rem;
-        margin-top: 1rem;
-    }
-
-    .form {
-
-        &__group {
-            position: relative;
-            height: 50px;
-            margin-top: 2rem;
-        }
-
-        &__input {
-            padding: .9rem .5rem; 
-            border-radius: 3px;
-            width: 230px;
-
-            @media screen and(max-width: $break-mobile) {
-                width: 100%;
-            }
-        }
-
-        &__error {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            font-weight: 600;
-            color: $color-red;
-
-        }
-
-        .btn-square {
-            margin-left: 2.5rem;
-
-            @media screen and(max-width: $break-mobile) {
-                margin: 1rem 0;
-                float: right;
-            }
-        }
-    }
-
-    @media screen and(max-width: $break-mobile) {
-        width: 100%;
-    }
-}
-
-.logo {
-    width: 240px;
-    height: 39px;
-    
-
-    svg {
-        position: relative;
-        left: -50px;
-        transform: scale(0.60);
-
-        @media screen and(max-width: $break-mobile) {
-            left: -80px;
-            transform: scale(0.40);
-        }
-    }    
-
-    @media screen and(max-width: $break-mobile) {
-        width: 150px;
-    }
-}
-
-.logo--white {
-
-    svg g path {
-        fill: $color-white;
     }
 }
