@@ -100,7 +100,7 @@
     img {
         width: 100%;
         margin-top: 5rem;        
-    }
+    }    
 }
 
 .section-secondary {
@@ -112,6 +112,13 @@
 
     @media screen and(max-width: $break-mobile) {
         flex-direction: column;
+
+        &__info {
+            order: 2;
+        }
+        &__img {
+            order: 1;
+        }
     }
 
     h2 {

@@ -212,10 +212,10 @@ header {
 }
 
 .footer .newsletter__paragraph {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.8rem;
-  width: 25rem;
+  width: 28rem;
   margin-top: 1rem;
 }
 
@@ -244,11 +244,12 @@ header {
 }
 
 .footer .newsletter .form__error {
+  font-size: 1rem;
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   font-weight: 600;
-  color: red;
+  color: #ff4242;
 }
 
 .footer .newsletter .form .btn-square {
@@ -408,6 +409,16 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .section-secondary__info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .section-secondary__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
