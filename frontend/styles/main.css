@@ -430,11 +430,12 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 20vh 0;
+    gap: 5rem;
   }
   .section-secondary__info {
     width: 100%;
     text-align: center;
-    margin-top: 5rem;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -491,6 +492,13 @@ header {
 }
 
 @media screen and (max-width: 900px) {
+  .section-bg-wave::after {
+    bottom: -25.7vw;
+    height: 25.7vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .section-bg-wave {
     background-color: #f6fbff;
     position: relative;
@@ -527,6 +535,13 @@ header {
     background: url("../assets/bg-section-bottom-mobile-1.svg") no-repeat;
     background-size: cover;
     z-index: 9;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 900px) {
+  .section-bg-wave::after {
+    bottom: -25.7vw;
+    height: 25.7vw;
   }
 }
 
@@ -568,6 +583,13 @@ header {
 }
 
 @media screen and (max-width: 900px) {
+  .section-bg-wave-2::after {
+    bottom: -25.7vw;
+    height: 25.7vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .section-bg-wave-2 {
     background-color: #f6fbff;
     position: relative;
@@ -604,6 +626,13 @@ header {
     background: url("../assets/bg-section-bottom-mobile-2.svg") no-repeat;
     background-size: cover;
     z-index: 9;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 900px) {
+  .section-bg-wave-2::after {
+    bottom: -25.7vw;
+    height: 25.7vw;
   }
 }
 

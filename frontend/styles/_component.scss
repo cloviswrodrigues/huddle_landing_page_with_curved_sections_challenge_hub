@@ -141,11 +141,12 @@
 
     @media screen and(max-width: $break-mobile) {
         flex-direction: column;
+        margin: 20vh 0;
+        gap: 5rem;
 
         &__info {
             width: 100%;
             text-align: center;
-            margin-top: 5rem;
             order: 2;
         }
 
