@@ -13,6 +13,11 @@
         background: url('../assets/'+$bg-top) no-repeat;
         background-size: cover;
         z-index: 9;
+
+        @media screen and(max-width: $break-mobile) {
+            top: -29.7vw;
+            height: 29.7vw;
+        }
     }
 
     &::after {
