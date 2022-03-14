@@ -3,6 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 4rem;
+    height: 70px;
 
     @media screen and(max-width: $break-mobile) {
         padding: 2rem 2rem;
