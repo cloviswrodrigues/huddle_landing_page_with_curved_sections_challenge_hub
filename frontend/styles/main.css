@@ -320,7 +320,7 @@ header {
 @media screen and (max-width: 900px) {
   .btn-rounded--pink {
     font-size: 1.2rem;
-    padding: 1.5rem 5rem;
+    padding: 1.2rem 5rem;
   }
 }
 
@@ -375,6 +375,9 @@ header {
 @media screen and (max-width: 900px) {
   .section-center p {
     width: 100%;
+  }
+  .section-center img {
+    margin-top: 8rem;
   }
 }
 
@@ -685,6 +688,9 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .emphasis__title {
+    font-size: 4.8rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
