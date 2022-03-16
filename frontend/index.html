@@ -124,14 +124,16 @@
         To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
         send you spam or pass on your email address
       </p>
-      <form method="POST" class="form">
+      <form action="" method="POST" class="form" id="js-form">
         <div class="form__group">
-          <input class="form__input" type="email">
-          <span class="form__error">Check your email please</span>
+          <input id="js-email" class="form__input" type="text">
+          <span id="js-email-msg-error" class="form__msg form__msg--error">Check your email please</span>
+          <span id="js-email-msg-sucess" class="form__msg form__msg--sucess">Email registered successfully!</span>
           <button type="submit" class="btn btn-square">Subscribe</button>
         </div>          
       </form>      
     </div>
   </footer>
+  <script src="./scripts/main.js"></script>
 </body>
 </html>

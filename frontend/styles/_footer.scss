@@ -127,14 +127,22 @@
                 }
             }
 
-            &__error {
-                font-size: 1rem;
+            &__msg {
+                font-size: 1.1rem;
                 position: absolute;
                 bottom: -2px;
                 left: 0;
                 font-weight: 600;
                 color: $color-light-red;
+                visibility: hidden;
 
+                &--error {                    
+                    color: $color-light-red;
+                }
+
+                &--sucess {                    
+                    color: $color-light-green;
+                }
             }
 
             .btn-square {

@@ -222,3 +222,15 @@
         }
     }
 }
+
+.active-error-input {
+    outline: 1px solid $color-light-red;
+}
+
+.active-sucess-input {
+    outline: 1px solid $color-light-green;
+}
+
+.active {
+    visibility: visible !important;
+}
