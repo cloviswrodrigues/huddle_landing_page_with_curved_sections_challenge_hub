@@ -8,6 +8,7 @@ form.addEventListener('submit', (e) => {
     let validate = validateInput();
     if (!validate) {
         activeSucessInputEmail(true);
+        inputEmail.value = ''
     }
 })
 

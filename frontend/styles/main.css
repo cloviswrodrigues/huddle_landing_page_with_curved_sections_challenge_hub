@@ -203,6 +203,7 @@ header {
 }
 
 .footer .newsletter {
+  min-width: 373px;
   width: 40%;
   color: white;
 }
@@ -258,7 +259,7 @@ header {
 }
 
 .footer .newsletter .form__msg--sucess {
-  color: #38cc8c;
+  color: #4BB543;
 }
 
 .footer .newsletter .form .btn-square {
@@ -708,7 +709,7 @@ header {
 }
 
 .active-sucess-input {
-  outline: 1px solid #38cc8c;
+  outline: 2px solid #4BB543;
 }
 
 .active {
