@@ -4,7 +4,7 @@
     background-color: $color-very-dark-cyan;
     margin-top: 20vw;
     padding-top: 8rem;
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
     position: relative;
 
     &::before {
@@ -30,7 +30,6 @@
         color: $color-white;
 
         &__paragraph {
-            font-weight: 600;
             width: 20vw;
             line-height: 1.8rem;
             margin-top: 1rem;
@@ -78,7 +77,7 @@
             }
 
             &__paragraph {
-                margin-top: 2rem;
+                margin-top: 1rem;
                 width: 100%;
             }
 
@@ -158,6 +157,7 @@
 
         @media screen and(max-width: $break-mobile) {
             width: 100%;
+            min-width: inherit;
         }
     }
 }
