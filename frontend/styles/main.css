@@ -240,6 +240,7 @@ header {
 @media screen and (max-width: 900px) {
   .footer .newsletter .form__input {
     width: 100%;
+    max-width: inherit;
   }
 }
 
