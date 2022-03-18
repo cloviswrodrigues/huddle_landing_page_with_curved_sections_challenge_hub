@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7vh 6vw;
+    padding: 4vh 6vw 7vh;
 
     @media screen and(max-width: $break-mobile) {
         padding: 2rem 2rem;
